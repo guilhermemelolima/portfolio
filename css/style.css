@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    font-family: "JetBrains Mono", monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do Scrollbar */
+::-webkit-scrollbar-track {
+    background-color: #263238;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00bcd4;
+    border-radius: 5px;
+}
+
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilo geral do corpo */
+body {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url("/img/laptop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #e0e0e0;
+    backdrop-filter: blur(8px);
+    background-blend-mode: darken;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #00bcd4;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #e0e0e0;
+}
+
+.hero .icon {
+    width: 60px;
+    margin: 10px;
+    transition: transform 0.3s ease, filter 0.3s;
+    filter: brightness(0.8);
+}
+
+.hero .icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1);
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Seção Sobre */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #b0bec5;
+}
+
+/* Seção Tecnologia */
+.technology {
+    padding: 50px 0;
+    background-color: #212121;
+}
+
+.technology h1 {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    margin-bottom: 30px;
+}
+
+.technology article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.technology .icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 20px;
+    transition: filter 0.3s ease, transform 0.3s;
+}
+
+.technology .icon:hover {
+    transform: scale(1.1);
+}
+
+.technology span {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #00e676;
+}
+
+/* Seção Projetos */
+.projects h1 {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    margin-bottom: 30px;
+
+}
+
+.containt-projects {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.containt-projects .project {
+    background-color: #263238;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.containt-projects .project:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.containt-projects .project .title {
+    font-size: 1.5rem;
+    color: #00e676;
+    margin-bottom: 10px;
+}
+
+.containt-projects .project img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.containt-projects .project a {
+    color: #00bcd4;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.containt-projects .project a:hover {
+    color: #00e676;
+}
+
+.containt-projects .project .language {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #b0bec5;
+}
+
+.containt-projects .project .language .circle {
+    background-color: #00e676;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+
+
